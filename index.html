@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Command Line Cheatsheet</title>
+        <link href="style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Command Line Cheatsheet</h1>
+        </header>
+
+        <article>
+            <div class="bash">
+            <h2>BASH</h2>
+            <h3>Basics</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="left">Command</th>
+                        <th class="right" colspan="2">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="left">pwd</td>
+                        <td class="right" colspan="2">Prints working directory</td>
+                    </tr>
+                    <tr>
+                        <td class="left">ls</td>
+                        <td class="right" colspan="2">Lists items within directory</td>
+                    </tr>
+                    <tr>
+                        <td class="left">mkdir directoryName</td>
+                        <td class="right" colspan="2">Makes a directory called directoryName</td>
+                    </tr>
+                    <tr>
+                        <td class="left">cd directoryName</td>
+                        <td class="right" colspan="2">Changes location to directoryName</td>
+                    </tr>
+                    <tr>
+                        <td class="left">cd ..<br>cd../..</td>
+                        <td class="right" colspan="2">Move to parent directory<br>Move to grandparent directory</td>
+                    </tr>
+                    <tr>
+                        <td class="left">touch (path) file.type</td>
+                        <td class="right" colspan="2">Creates a new file (optional path)</td>
+                    </tr>
+                    <tr>
+                        <td class="left">rm -f file.type</td>
+                        <td class="right" colspan="2">Deletes file</td>
+                    </tr>
+                    <tr>
+                        <td class="left">rm -d directory</td>
+                        <td class="right" colspan="2">Deletes directory</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+
+            <div class="git">
+                <h2>Git</h2>
+                <p><a href="https://git-scm.com/docs">Reference</a></p>
+                <h3>Basics</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="left">Command</th>
+                            <th class="right" colspan="2">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="left">git init</td>
+                            <td class="right" colspan="2">Initialize new repository</td>
+                        </tr>
+                        <tr>
+                            <td class="left">git add file.type</td>
+                            <td class="right" colspan="2">Add file to staging area</td>
+                        </tr>
+                        <tr>
+                            <td class="left">git commit -m "message"</td>
+                            <td class="right" colspan="2">Commit changes to the branch with message</td>
+                        </tr>
+                        <tr>
+                            <td class="left">git status</td>
+                            <td class="right" colspan="2">Shows untracked files and files staged for commit</td>
+                        </tr>
+                        <tr>
+                            <td class="left">git log</td>
+                            <td class="right" colspan="2">Displays log of all commits and their information</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Pushing to Github</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="left">Command</th>
+                            <th class="right" colspan="2">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="left">git branch -M main</td>
+                            <td class="right" colspan="2">Renames current branch to main</td>
+                        </tr>
+                        <tr>
+                            <td class="left">git remote add origin https://github.com/...</td>
+                            <td class="right" colspan="2">Sets origin = remote repository url</td>
+                        </tr>
+                        <tr>
+                            <td class="left">git push -u origin main</td>
+                            <td class="right" colspan="2">Pushes the branch 'main' to the url 'origin' /<br>Continue pushing to remote repository afterwards</td>
+                        </tr>
+                        <tr>
+                            <td class="left">git remote set-url origin https://github.com/...</td>
+                            <td class="right" colspan="2">Resets origin to repository url</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Branching</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="left">Command</th>
+                            <th class="right" colspan="2">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="left">git branch</td>
+                            <td class="right" colspan="2">Lists all the branches</td>
+                        </tr>
+                        <tr>
+                            <td class="left">git branch branch-name</td>
+                            <td class="right" colspan="2">Creates branch called branch-name</td>
+                        </tr>
+                        <tr>
+                            <td class="left">git checkout branch-name</td>
+                            <td class="right" colspan="2">Moves to branch-name branch</td>
+                        </tr>
+                        <tr>
+                            <td class="left">git branch -M other-branch</td>
+                            <td class="right" colspan="2">Renames current branch to other-branch</td>
+                        </tr>
+                        <tr>
+                            <td class="left">git merge branch-name</td>
+                            <td class="right" colspan="2">Merges branch-name to the master branch</td>
+                        </tr>
+                        <tr>
+                            <td class="left">git checkout master</td>
+                            <td class="right" colspan="2">Moves back to master branch</td>
+                        </tr>
+                        <tr>
+                            <td class="left">git branch -d branch-name</td>
+                            <td class="right" colspan="2">Deletes branch-name branch</td>
+                        </tr>
+                        <tr>
+                            <td class="left">git push origin --delete branch-name</td>
+                            <td class="right" colspan="2">Deletes branch-name from remote repository</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Backtracking</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="left">Command</th>
+                            <th class="right" colspan="2">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="left">git show HEAD</td>
+                            <td class="right" colspan="2">Displays log information + committed file changes</td>
+                        </tr>
+                        <tr>
+                            <td class="left">git reset HEAD file.type</td>
+                            <td class="right" colspan="2">Removes file.type from the stagin area</td>
+                        </tr>
+                        <tr>
+                            <td class="left">git checkout HEAD file.type</td>
+                            <td class="right" colspan="2">Restores file.type to the latest commit</td>
+                        </tr>
+                        <tr>
+                            <td class="left">git reset commit-SHA</td>
+                            <td class="right" colspan="2">Resets the head to a previous commit with the same SHA</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </body>
+</html>
