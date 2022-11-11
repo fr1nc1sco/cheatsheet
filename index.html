@@ -12,6 +12,7 @@
         <article>
             <div class="bash">
             <h2>BASH</h2>
+            <p><a href="https://www.gnu.org/software/bash/manual/bash.html">Reference</a></p>
             <h3>Basics</h3>
             <table>
                 <thead>
@@ -38,8 +39,8 @@
                         <td class="right" colspan="2">Changes location to directoryName</td>
                     </tr>
                     <tr>
-                        <td class="left">cd ..<br>cd../..</td>
-                        <td class="right" colspan="2">Move to parent directory<br>Move to grandparent directory</td>
+                        <td class="left">cd ..<br>cd../..<br>cd /givenDirectory</td>
+                        <td class="right" colspan="2">Move to parent directory<br>Move to grandparent directory<br>Move to givenDirectory</td>
                     </tr>
                     <tr>
                         <td class="left">touch (path) file.type</td>
@@ -74,8 +75,8 @@
                             <td class="right" colspan="2">Initialize new repository</td>
                         </tr>
                         <tr>
-                            <td class="left">git add file.type</td>
-                            <td class="right" colspan="2">Add file to staging area</td>
+                            <td class="left">git add file.type<br>git add --all</td>
+                            <td class="right" colspan="2">Add file to staging area<br>Add all files to staging area</td>
                         </tr>
                         <tr>
                             <td class="left">git commit -m "message"</td>
@@ -179,7 +180,7 @@
                         </tr>
                         <tr>
                             <td class="left">git reset HEAD file.type</td>
-                            <td class="right" colspan="2">Removes file.type from the stagin area</td>
+                            <td class="right" colspan="2">Removes file.type from the staging area</td>
                         </tr>
                         <tr>
                             <td class="left">git checkout HEAD file.type</td>
